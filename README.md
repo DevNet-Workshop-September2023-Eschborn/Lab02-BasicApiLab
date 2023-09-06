@@ -41,6 +41,41 @@ Level 1:
 2. Shuffle the deck (use the same deck you got in step 1)
 3. Draw a card from the shuffled Deck
 
+-----
+
+### Woerking with envorinments
+
+Postman offers the posibillity to create "Environments" this is a set of variables which you can use in your calls. This offers you the possibility to create and use the same API calls in different environments. In addition, these variables can automatically be filled with values from previous calls. To use the environment variables in your calls, you can reference them like that {{variableName}}
+
+Level 2:
+1. Create an environment
+2. Add the deck of cards url as a variable
+3. Use this variable in your next tasks
+
+1. Get a deck
+2. Save the Deck ID in the environment
+3. Shuffle the deck using a deck as variable
+4. Draw a card using the variable
+
+### Using return values
+
+For the next tasks we will be using the return values from previous calls. We are assuming that we are working with json responses, which we can parse and reuse in Postman. For everyone not familiar with Java Script, we will provide the code below. The only thing you have to change the desired target variable name and which value should be stored there. Just use and modify the API calls you used before.
+
+```
+Create an environment Variable -> and work with this code under “Tests”
+
+var jsonData = JSON.parse(responseBody); //this line takes the response and makes it available as a json object
+postman.setEnvironmentVariable(“variable_name", jsonData.whateverineed);
+```
+
+Level 3:
+1. Get a deck
+2. Save the Deck ID in the environment
+3. Shuffle the deck using a deck as variable
+4. Draw a card using the variable
+
+
+
 ### APIC API
 
 1. Login to the APIC via WebUI (credentials provided by instructor)
@@ -117,25 +152,12 @@ Proceed if Response Status is 200 OK
 
 ## Bonus
 
-### Deck of cards - Level 2
-
-1. Get a deck
-2. Save the Deck ID in the environment
-3. Shuffle the deck using a variable
-4. Draw a card using the variable
-
-
-Hint: 
-Create an environment Variable -> and work with this code under “Tests”
-
-var jsonData = JSON.parse(responseBody);
-postman.setEnvironmentVariable(“variable_name", jsonData.whateverineed);
-
-## APIC API Bonus
+## API Bonus
 
 ### Query for all Faults in the fabric
 
-### Create Following Structure
+### Create Following Structure and use the deck of cards api for naming
+
 1. Tenant
 2. VRF
 3. bridge domain
