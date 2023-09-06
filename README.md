@@ -154,11 +154,16 @@ Proceed if Response Status is 200 OK
 
 ## API Bonus
 
-### Query for all Faults in the fabric
+### 1 Query for all Faults in the fabric
 
-### Create Following Structure and use the deck of cards api for naming
+### 2 Create Following Structure and use the deck of cards api for naming
+Try to work with the environment as much as possible
 
-1. Tenant
-2. VRF
-3. bridge domain
-4. Application Profile containing 3 EPGs Web, DB, APP
+1. Get a new Deck
+2. Shuffle the deck
+3. Log into APIC
+4. Create a Tenant
+5. Create VRF
+6. Create a Bridge domain
+8. Create an Application Profile
+9. Draw 3 times a card and name the EPGs after the cards name
