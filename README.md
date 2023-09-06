@@ -10,6 +10,8 @@
 | Postman | https://www.postman.com/downloads/ | 
 | APIC        | https://10.2.0.43/               | wsuser{studentnumber}/DevnetWorkshop! |
 
+In this lab you will install Postamn and learn how to do basic requests to the Deck of Cards API. We will work with environment in Postman and extract and reuse values from the requests you made. When you are done with the tasks on the Deck of Cards API, we will cover the basic interaction with the ACI APIC.
+
 ### Work with Postman
 
 Install Postman on your laptop https://www.postman.com/downloads/, if this is not possible use your assigned workstation
@@ -18,11 +20,11 @@ Open Postman
 
 ![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/397c5a1f-197b-4239-b357-7c5a8e0c2b82)
 
-Click on skip
+Click on skip or sign in, if you do have an account or want to create one.
 
 ![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/2bb928a3-036f-4fbc-aa48-91870008f02d)
 
-Create a new collection “deckofcards”
+Create a new collection “deckofcards”. The Collection is used to store, group and sort the requests you made to reuse them later.
 
 ![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/3e65c8e4-82d0-404b-ac75-671b818bd0f8)
 
@@ -30,14 +32,14 @@ Right Click on deckofcards and create a new request
 
 ![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/99645157-e5ed-4439-97e5-0dc45ab09f3f)
 
-Create your first request and continue with the tasks
+Create your first request for Level 1. All API Endpoints you need are documented on the Deck of Cards homepage.
 
 ![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/1c66cf3a-a9d5-409b-a3eb-776be7d9e507)
 
 Level 1: 
-1. Get a deck
-2. Shuffle the deck
-3. Draw a card
+1. Get a deck of cards
+2. Shuffle the deck (use the same deck you got in step 1)
+3. Draw a card from the shuffled Deck
 
 ### APIC API
 
