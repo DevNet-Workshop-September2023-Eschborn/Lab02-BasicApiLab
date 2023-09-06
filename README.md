@@ -43,7 +43,7 @@ Level 1:
 
 -----
 
-### Woerking with envorinments
+### Working with envorinments
 
 Postman offers the posibillity to create "Environments" this is a set of variables which you can use in your calls. This offers you the possibility to create and use the same API calls in different environments. In addition, these variables can automatically be filled with values from previous calls. To use the environment variables in your calls, you can reference them like that {{variableName}}
 
