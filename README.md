@@ -18,23 +18,28 @@ Install Postman on your laptop https://www.postman.com/downloads/, if this is no
 
 Open Postman
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/397c5a1f-197b-4239-b357-7c5a8e0c2b82)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/4190441d-853e-4215-b914-7e16c402dd51)
+
 
 Click on skip or sign in, if you do have an account or want to create one.
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/2bb928a3-036f-4fbc-aa48-91870008f02d)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/c7b2fb91-c3a5-4cc7-baa5-0e0b4b9ef8d3)
+
 
 Create a new collection “deckofcards”. The Collection is used to store, group and sort the requests you made to reuse them later.
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/3e65c8e4-82d0-404b-ac75-671b818bd0f8)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/eae715e1-7fda-4bea-8452-6cdfd8b49d72)
+
 
 Right Click on deckofcards and create a new request
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/99645157-e5ed-4439-97e5-0dc45ab09f3f)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/2aa41ae7-17f0-418b-a806-23e450947337)
+
 
 Create your first request for Level 1. All API Endpoints you need are documented on the Deck of Cards homepage.
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/1c66cf3a-a9d5-409b-a3eb-776be7d9e507)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/d676079d-3f0c-4149-9b0d-c62f2b22eade)
+
 
 Level 1: 
 1. Get a deck of cards
@@ -80,23 +85,26 @@ Level 3:
 
 1. Login to the APIC via WebUI (credentials provided by instructor)
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/24b1f0e5-1162-4d3e-b1c2-e013d22b33b2)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/fe10fdc4-6e89-4bbf-b39e-e5432d028c2d)
+
 
 2. Open Postman and create a new collection
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/96e7f054-1d8f-4a73-9c56-519c1a1698c3)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/f79fa80e-96b7-480f-9ead-3b3e8102ee96)
+
 
 3. Create your APIC environment
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/8453034b-6853-4552-a8e5-0c41fc8e5560)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/b8f37d6b-0bfc-4318-a114-a4dd89a186ba)
+
 
 4. Add the Variables to the Environment
   - apic
   - username
   - password
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/5d9230b0-c2c8-4318-90e3-dc62e231fb44)
- 
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/30f1ccfa-514f-4ed7-9a38-af3956950d3e)
+
 5. Create APIC Login request
   - Create a POST Request with following URL
     https://{{apic}}/api/aaaLogin.json
@@ -122,18 +130,20 @@ Proceed if Response Status is 200 OK
 1. Login via the Webbrowser to the APIC
 2. Open the API Inspector
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/c40f37ba-500e-456d-94e6-8ab29e16fa4f)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/7c989b2a-78b5-40a4-91df-9be6adb17bd1)
+
 
 3. Create a new Tenant with the name of your user
 4. Filter for POST in the API Inspector window and find the URL ending with tn-[yourtenantname]
 5. Observe the API Inspector and copy the payload aswell as the URL in a new Postman request
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/86f5f74e-6fc5-43fa-9ede-b54a3afd17b6)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/1366ce19-119f-4031-adca-a9f3116922ec)
+
 
 6. Use your Postman Login request to Login to the APIC
 7. Delete your tenant with the “Delete” Method
 
-![image](https://github.com/DevNet-Workshop-May-2023/Lab02-BasicApiLab/assets/57700911/930512e6-cb73-47ff-8279-c0339b71c4b6)
+![image](https://github.com/DevNet-Workshop-September2023-Eschborn/Lab02-BasicApiLab/assets/66415321/2aa4ddaf-429e-4c1b-8eb8-989cafaf5861)
 
 8. Recreate the Tenant by changing the Method to “POST”
 
